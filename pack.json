@@ -1,0 +1,187 @@
+{
+    "jogos_populares": {
+      "brasil": {
+        "jogo_mais_jogado": {
+          "nome": "Free Fire",
+          "quantidade_jogadores": 25000000,
+          "categoria": "Battle Royale",
+          "plataformas": ["Android", "iOS", "PC"],
+          "ano_lancamento": 2017,
+          "descricao": "Um jogo de sobrevivência onde os jogadores competem em uma ilha.",
+          "demografia_jogadores": {
+            "faixa_etaria": "16-35 anos",
+            "genero": {
+              "masculino": 60,
+              "feminino": 40
+            }
+          },
+          "participantes_pesquisa": 5000
+        },
+        "jogos_top_5": [
+          {
+            "nome": "Free Fire",
+            "jogadores": 25000000,
+            "categoria": "Battle Royale",
+            "plataformas": ["Android", "iOS", "PC"],
+            "ano_lancamento": 2017,
+            "descricao": "Um jogo de sobrevivência onde os jogadores competem em uma ilha.",
+            "demografia_jogadores": {
+              "faixa_etaria": "16-35 anos",
+              "genero": {
+                "masculino": 60,
+                "feminino": 40
+              }
+            }
+          },
+          {
+            "nome": "League of Legends",
+            "jogadores": 15000000,
+            "categoria": "MOBA",
+            "plataformas": ["PC"],
+            "ano_lancamento": 2009,
+            "descricao": "Um jogo de estratégia em equipe onde os jogadores lutam para destruir a base inimiga.",
+            "demografia_jogadores": {
+              "faixa_etaria": "18-34 anos",
+              "genero": {
+                "masculino": 70,
+                "feminino": 30
+              }
+            }
+          },
+          {
+            "nome": "Counter-Strike: Global Offensive",
+            "jogadores": 10000000,
+            "categoria": "FPS",
+            "plataformas": ["PC"],
+            "ano_lancamento": 2012,
+            "descricao": "Um jogo de tiro em primeira pessoa com foco em competição.",
+            "demografia_jogadores": {
+              "faixa_etaria": "18-35 anos",
+              "genero": {
+                "masculino": 80,
+                "feminino": 20
+              }
+            }
+          },
+          {
+            "nome": "FIFA 22",
+            "jogadores": 8000000,
+            "categoria": "Esporte",
+            "plataformas": ["PC", "PS4", "PS5", "Xbox"],
+            "ano_lancamento": 2021,
+            "descricao": "Simulador de futebol com modos multiplayer e carreira.",
+            "demografia_jogadores": {
+              "faixa_etaria": "10-40 anos",
+              "genero": {
+                "masculino": 65,
+                "feminino": 35
+              }
+            }
+          },
+          {
+            "nome": "Valorant",
+            "jogadores": 6000000,
+            "categoria": "FPS",
+            "plataformas": ["PC"],
+            "ano_lancamento": 2020,
+            "descricao": "Um jogo tático de tiro em primeira pessoa com heróis.",
+            "demografia_jogadores": {
+              "faixa_etaria": "16-30 anos",
+              "genero": {
+                "masculino": 75,
+                "feminino": 25
+              }
+            }
+          }
+        ]
+      },
+      "regioes": {
+        "sudeste": {
+          "jogo": {
+            "nome": "League of Legends",
+            "quantidade_jogadores": 4000000,
+            "categoria": "MOBA",
+            "participantes": 1500,
+            "ano_lancamento": 2009,
+            "descricao": "Um jogo de estratégia em equipe onde os jogadores lutam para destruir a base inimiga.",
+            "demografia_jogadores": {
+              "faixa_etaria": "18-34 anos",
+              "genero": {
+                "masculino": 70,
+                "feminino": 30
+              }
+            }
+          }
+        },
+        "sul": {
+          "jogo": {
+            "nome": "Counter-Strike: Global Offensive",
+            "quantidade_jogadores": 3000000,
+            "categoria": "FPS",
+            "participantes": 800,
+            "ano_lancamento": 2012,
+            "descricao": "Um jogo de tiro em primeira pessoa com foco em competição.",
+            "demografia_jogadores": {
+              "faixa_etaria": "18-35 anos",
+              "genero": {
+                "masculino": 80,
+                "feminino": 20
+              }
+            }
+          }
+        },
+        "norte": {
+          "jogo": {
+            "nome": "Mobile Legends",
+            "quantidade_jogadores": 2000000,
+            "categoria": "MOBA",
+            "participantes": 600,
+            "ano_lancamento": 2016,
+            "descricao": "Um jogo de estratégia em equipe focado em batalhas rápidas.",
+            "demografia_jogadores": {
+              "faixa_etaria": "15-30 anos",
+              "genero": {
+                "masculino": 55,
+                "feminino": 45
+              }
+            }
+          }
+        },
+        "nordeste": {
+          "jogo": {
+            "nome": "FIFA 22",
+            "quantidade_jogadores": 2500000,
+            "categoria": "Esporte",
+            "participantes": 700,
+            "ano_lancamento": 2021,
+            "descricao": "Simulador de futebol com modos multiplayer e carreira.",
+            "demografia_jogadores": {
+              "faixa_etaria": "10-40 anos",
+              "genero": {
+                "masculino": 65,
+                "feminino": 35
+              }
+            }
+          }
+        },
+        "centro_oeste": {
+          "jogo": {
+            "nome": "Valorant",
+            "quantidade_jogadores": 1500000,
+            "categoria": "FPS",
+            "participantes": 400,
+            "ano_lancamento": 2020,
+            "descricao": "Um jogo tático de tiro em primeira pessoa com heróis.",
+            "demografia_jogadores": {
+              "faixa_etaria": "16-30 anos",
+              "genero": {
+                "masculino": 75,
+                "feminino": 25
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
