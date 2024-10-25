@@ -3,104 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gráfico de Jogos Populares no Brasil</title>
+    <title>Portfólio Ambiental</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a1a, #3a3a3a);
+            color: #f0f0f0;
         }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
+        header {
+            background-color: rgba(0, 77, 64, 0.95);
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
             text-align: center;
-            color: #333;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
         }
-
-        canvas {
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #b2dfdb;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+            background: rgba(34, 34, 34, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+        }
+        h1 {
+            color: #00bfae;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #1de9b6;
+            border-bottom: 2px solid #b2dfdb;
+            padding-bottom: 5px;
             margin-top: 20px;
         }
+        p, li {
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: rgba(255, 255, 255, 0.15);
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #00bfae;
+            transition: background 0.3s;
+        }
+        li:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(0, 77, 64, 0.95);
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 30px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .gallery img {
+            width: calc(33% - 10px);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #00bfae;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .cta:hover {
+            background-color: #00897b;
+            transform: scale(1.02);
+        }
+        .skill {
+            margin: 15px 0;
+        }
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .progress {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        .progress-bar {
+            height: 10px;
+            background: #00bfae;
+            transition: width 0.4s;
+        }
+        @media (max-width: 768px) {
+            .gallery img {
+                width: calc(50% - 10px);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Jogos Mais Jogados no Brasil</h1>
-        <canvas id="jogosChart"></canvas>
-    </div>
-    <script>
-        const ctx = document.getElementById('jogosChart').getContext('2d');
 
-        const jogosData = {
-            labels: [
-                'Free Fire',
-                'League of Legends',
-                'Counter-Strike: Global Offensive',
-                'FIFA 22',
-                'Valorant'
-            ],
-            datasets: [{
-                label: 'Quantidade de Jogadores',
-                data: [25000000, 15000000, 10000000, 8000000, 6000000],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.6)',
-                    'rgba(54, 162, 235, 0.6)',
-                    'rgba(255, 206, 86, 0.6)',
-                    'rgba(75, 192, 192, 0.6)',
-                    'rgba(153, 102, 255, 0.6)'
-                ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)'
-                ],
-                borderWidth: 1
-            }]
-        };
+<header>
+    <h1>Portfólio Ambiental</h1>
+    <nav>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
 
-        const jogosChart = new Chart(ctx, {
-            type: 'bar',
-            data: jogosData,
-            options: {
-                responsive: true,
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: 'Quantidade de Jogadores'
-                        }
-                    },
-                    x: {
-                        title: {
-                            display: true,
-                            text: 'Jogos'
-                        }
-                    }
-                },
-                plugins: {
-                    legend: {
-                        display: true,
-                        position: 'top'
-                    },
-                    title: {
-                        display: true,
-                        text: 'Gráfico dos Jogos Mais Jogados no Brasil'
-                    }
-                }
-            }
-        });
-    </script>
-</body>
-</html>
+<div class="container">
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou um entusiasta do meio ambiente com paixão por promover a sustentabilidade e a conscientização ambiental. Tenho trabalhado em várias iniciativas que visam a preservação do nosso planeta e a educação ambiental.</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <ul>
+            <li>
+                <strong>Reciclagem Criativa</strong>: Um projeto que incentiva a reutilização de materiais descartados para criar novas obras de arte.
+            </li>
+            <li>
+                <strong>Plante uma Árvore</strong>: Uma campanha para plantar árvores em áreas urbanas e aumentar a cobertura verde na cidade.
+            </li>
+            <li>
+                <strong>Educação Ambiental</strong>: Workshops em escolas para educar crianças sobre a importância da preservação do meio ambiente.
+            </li>
+        </ul>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="skill">
+            <div class="skill-name">
+                <span>Gestão de Projetos Ambientais</span>
+                <span>90%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">
+                <span>Comunicação e Educação Ambiental</span>
+                <span>85%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">
+                <span>Planejamento Sustentável</span>
+                <span>80%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">
+                <span>Reciclagem e Reutilização</span>
+                <span>75%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">
+                <span>Uso de Tecnologias Verdes</span>
+                <span>70%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 70%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200?text=Projeto+1" alt="Projeto 1">
+            <img src="https://via.placeholder.com/300x200?text=Projeto+2" alt="Projeto 2">
+            <img src="https://via.placeholder.com/300x200?text=Projeto+3" alt="Projeto 3">
+            <img src="https://via.placeholder.com/300x200?text=Projeto+4" alt="Projeto 4">
+            <img src="https://via.placeholder.com/300x200?text=Projeto+5" alt="Projeto 5">
+            <img src="https://via.placeholder.com/300x200?text=Projeto+6" alt="Projeto 6">
+       
